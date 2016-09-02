@@ -14,10 +14,7 @@
  ### 1. You're building an app and want to store all of the ingredients added to a cart. How would you represent this cart in code? The ingredients are "Chips", "Salsa", "Guacamole", "Red wine". Explicitly mark the content of the cart as strings.
  */
 // write your code here
-
-
-
-
+var cart: [String] = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 /*: question2
@@ -26,18 +23,16 @@
 // write your code here
 
 
-
-
-
-
+var numCart: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 /*: question3
  ### 3. Take the list of numbers you created in question 2 and print their values in the most efficient way possible.
  */
 // write your code here
 
-
-
+for number in numCart {
+    print ("\(number)")
+}
 
 
 
@@ -46,7 +41,9 @@
  ### 4. Take the list of shopping cart items you created in question 1 and print their values in the most efficient way possible. Prefix each item in the array with a string of text.
  */
 // write your code here
-
+for item in cart {
+    print ("I'm buying \(item)")
+}
 
 
 
@@ -59,9 +56,12 @@
 // write your code here
 
 
-
-
-
+func print (cart: [String]){
+    for item in cart {
+    print ("\(item)")
+    }
+}
+print(cart)
 
 
 /*: question6
@@ -69,9 +69,21 @@
  */
 // write your code here
 
+func greeting (names: [String]){
+    for person in names {
+        print ("Good Morning \(person)")
+        
+        if person == "Michael" {
+            print ("Top of the morning Michael!")
+        }
+    }
+    
 
+}
 
+var people = ["Joshua", "Samiir", "Michael", "June"]
 
+greeting(people)
 
 
 /*: question7
@@ -79,7 +91,16 @@
  */
 // write your code here
 
+var numl = [1,2,14,56,76,32]
+func numeros (numbers: [Int]) {
+    for number in numbers {
+    if number < 50 {
+        print (number)
+        }
+    }
+}
 
+numeros(numl)
 
 
 
